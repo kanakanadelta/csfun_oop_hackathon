@@ -1,0 +1,11 @@
+/Users/rtongson/Documents/csharp/oopfun/Hackathon/bin/Debug/netcoreapp2.2/Hackathon.deps.json
+/Users/rtongson/Documents/csharp/oopfun/Hackathon/bin/Debug/netcoreapp2.2/Hackathon.runtimeconfig.json
+/Users/rtongson/Documents/csharp/oopfun/Hackathon/bin/Debug/netcoreapp2.2/Hackathon.runtimeconfig.dev.json
+/Users/rtongson/Documents/csharp/oopfun/Hackathon/bin/Debug/netcoreapp2.2/Hackathon.dll
+/Users/rtongson/Documents/csharp/oopfun/Hackathon/bin/Debug/netcoreapp2.2/Hackathon.pdb
+/Users/rtongson/Documents/csharp/oopfun/Hackathon/obj/Debug/netcoreapp2.2/Hackathon.csprojAssemblyReference.cache
+/Users/rtongson/Documents/csharp/oopfun/Hackathon/obj/Debug/netcoreapp2.2/Hackathon.csproj.CoreCompileInputs.cache
+/Users/rtongson/Documents/csharp/oopfun/Hackathon/obj/Debug/netcoreapp2.2/Hackathon.AssemblyInfoInputs.cache
+/Users/rtongson/Documents/csharp/oopfun/Hackathon/obj/Debug/netcoreapp2.2/Hackathon.AssemblyInfo.cs
+/Users/rtongson/Documents/csharp/oopfun/Hackathon/obj/Debug/netcoreapp2.2/Hackathon.dll
+/Users/rtongson/Documents/csharp/oopfun/Hackathon/obj/Debug/netcoreapp2.2/Hackathon.pdb
