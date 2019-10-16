@@ -30,6 +30,8 @@ namespace Hackathon
                 Hand =  new Shape("paper");
             else if(c == 's' || c == 'S')
                 Hand = new Shape("scissors");
+            else if(c == 'g' || c == 'G')
+                Hand = new Shape("scissors");
             else {
                 System.Console.WriteLine("Invalid hand shape!!!");
                 return null;
@@ -48,26 +50,32 @@ namespace Hackathon
                 {
                     WinCount++;
                     opponent.LossCount++;
+                    System.Console.WriteLine($"{Hand.HandSign} beats {opponent.Hand.HandSign}");
                     System.Console.WriteLine($"{Name} wins! {opponent.Name} loses!");
                 }
                 else if(Result == "lose")
                 {
                     LossCount++;
                     opponent.WinCount++;
+                    System.Console.WriteLine($"{opponent.Hand.HandSign} beats {Hand.HandSign}");
                     System.Console.WriteLine($"{opponent.Name} wins! {Name} loses!");
                 }
                 else if(Result == "draw")
                 {
+                    System.Console.WriteLine("JYNX!");
+                    System.Console.WriteLine($"You both picked {Hand.HandSign}");
                     System.Console.WriteLine($"No one wins at life!");
                 }
                 
                 Hand = null;
                 opponent.Hand = null;
+
+
                 return;
             }
             else
             {
-                System.Console.WriteLine("Both players need to set their shapes!");
+                System.Console.WriteLine("Error occured... try again!!!");
                 return;
             }
         }
