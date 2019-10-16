@@ -8,6 +8,7 @@ namespace Hackathon
         private Shape hand;
         private int winCount;
         private int lossCount;
+        public bool Living = true;
 
         public Player(string name)
         {
@@ -31,7 +32,7 @@ namespace Hackathon
             else if(c == 's' || c == 'S')
                 Hand = new Shape("scissors");
             else if(c == 'g' || c == 'G')
-                Hand = new Shape("scissors");
+                Hand = new Shape("gun");
             else {
                 System.Console.WriteLine("Invalid hand shape!!!");
                 return null;
@@ -39,45 +40,10 @@ namespace Hackathon
             return Hand;
         }
 
-        public void Play(Player opponent)
-        {
-            if(Hand != null && opponent.Hand !=null)
-            {
-                // retrieve result from Hand method
-                string Result = Hand.CheckResult(Hand, opponent.Hand);
-
-                if(Result == "win")
-                {
-                    WinCount++;
-                    opponent.LossCount++;
-                    System.Console.WriteLine($"{Hand.HandSign} beats {opponent.Hand.HandSign}");
-                    System.Console.WriteLine($"{Name} wins! {opponent.Name} loses!");
-                }
-                else if(Result == "lose")
-                {
-                    LossCount++;
-                    opponent.WinCount++;
-                    System.Console.WriteLine($"{opponent.Hand.HandSign} beats {Hand.HandSign}");
-                    System.Console.WriteLine($"{opponent.Name} wins! {Name} loses!");
-                }
-                else if(Result == "draw")
-                {
-                    System.Console.WriteLine("JYNX!");
-                    System.Console.WriteLine($"You both picked {Hand.HandSign}");
-                    System.Console.WriteLine($"No one wins at life!");
-                }
-                
-                Hand = null;
-                opponent.Hand = null;
-
-
-                return;
-            }
-            else
-            {
-                System.Console.WriteLine("Error occured... try again!!!");
-                return;
-            }
+        public string GetWinLoss(){
+            string winLoss = $"{Name}: Wins - {WinCount}, Losses - {LossCount}, Life is intact? - {Living}";
+            return winLoss;
         }
+
     }
 }

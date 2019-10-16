@@ -23,8 +23,10 @@ namespace Hackathon
                     return "draw";
                 else if(opponentHand.HandSign == "paper")
                     return "lose";
-                else
+                else if(opponentHand.HandSign == "scissors")
                     return "win";
+                else
+                    return "die";
             } //
             else if(playerHand.HandSign == "paper")
             {
@@ -32,17 +34,33 @@ namespace Hackathon
                     return "draw";
                 else if(opponentHand.HandSign == "scissors")
                     return "lose";
-                else
+                else if (opponentHand.HandSign == "rock")
                     return "win";
+                else
+                    return "die";
             } //
-            else
+            else if(playerHand.HandSign == "scissors")
             {
                 if(opponentHand.HandSign == "scissors")
                     return "draw";
                 else if(opponentHand.HandSign == "rock")
                     return "lose";
-                else
+                else if(opponentHand.HandSign == "paper")
                     return "win";
+                else
+                    return "die";
+                
+            } 
+            else 
+            {
+                if(opponentHand.HandSign == "gun")
+                {
+                    return "shootout";
+                }
+                else 
+                {
+                    return "live";
+                }
             }
         }
     }
